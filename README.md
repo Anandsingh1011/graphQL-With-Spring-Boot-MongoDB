@@ -15,7 +15,7 @@ ___
 
 GraphQL Request
 
-```json
+```graphql
 mutation {
   createAuthor(
     name: "Anand",
@@ -40,7 +40,7 @@ Response
 **Create a Tutorial**
 
 GraphQL Request: requiring Tutorial id, title and author (name) for response
-```json
+```graphql
 mutation {
   createTutorial (
     title: "Java Tutorial #1",
@@ -74,7 +74,7 @@ Response
 **Read all Tutorials**
 
 GraphQL Request
-```json
+```graphql
 {
   findAllTutorials{
     id
@@ -119,7 +119,7 @@ Response
 **Read all Authors**
 
 GraphQL Request
-```json
+```graphql
 {
   findAllAuthors{
     id
@@ -149,7 +149,7 @@ Response
 **Update a Tutorial**
 
 GraphQL Request
-```json
+```graphql
 mutation {
   updateTutorial (
     id: "638c1089c50e8c75aa62231f"
@@ -183,7 +183,7 @@ Response
 **Delete a Tutorial**
 
 GraphQL Request
-```json
+```graphql
 mutation {
   deleteTutorial(id: "638c1091c50e8c75aa622321")
 }
@@ -203,7 +203,7 @@ Response
 **Count number of Tutorials**
 
 GraphQL Request
-```json
+```graphql
 {
   countTutorials
 }
